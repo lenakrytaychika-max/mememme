@@ -1,0 +1,165 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background: linear-gradient(to bottom, #001530, #000022);
+  color: #ffffff;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #380dad;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+.header h1 {
+  font-size: 42px;
+  margin: 0;
+  animation: glow 2s infinite alternate;
+}
+
+.header p {
+  font-size: 18px;
+  margin: 12px 0 20px;
+  color: #f0e6ff;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff77aa;
+  }
+  to {
+    text-shadow: 0 0 20px #ff55ff;
+  }
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  margin-top: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffe0ff;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #a24fff;
+  transform: scale(1.05);
+}
+
+/* ===== BANNER ===== */
+.banner-box {
+  margin-top: 25px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 950px;
+  border-radius: 15px;
+  border: 3px solid #ff55aa;
+  box-shadow: 0 0 25px rgba(255, 85, 170, 0.5);
+  transition: transform 0.4s ease;
+}
+
+.banner:hover {
+  transform: scale(1.02);
+}
+
+/* ===== CONTENT ===== */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding: 35px 20px;
+}
+
+/* ===== BLOCKS ===== */
+.block {
+  background-color: #02004d;
+  border: 3px solid #6044f7;
+  border-radius: 18px;
+  width: 360px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.5s ease;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.block:hover {
+  transform: scale(1.07) rotate(-1deg);
+  border-color: #ff77aa;
+  box-shadow: 0 0 40px rgba(255, 119, 170, 0.7);
+}
+
+.block h2 {
+  color: #ffccff;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.block p,
+.block li {
+  font-size: 16px;
+  color: #dbd8ff;
+  line-height: 1.6;
+}
+
+/* Lists inside blocks */
+.block ul {
+  padding-left: 18px;
+  text-align: left;
+}
+
+/* Images */
+.block img {
+  width: 100%;
+  border-radius: 14px;
+  border: 3px solid #8655f7;
+  margin-top: 18px;
+  transition: transform 0.4s ease;
+}
+
+.block img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #6a0dad;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .block {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
